@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlogPost.h"
 
 @interface TableViewController : UITableViewController
+
+@property (nonatomic, strong) NSMutableArray *blogPosts;
 
 @end

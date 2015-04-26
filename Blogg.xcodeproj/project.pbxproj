@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		203308F81A8F90FB006A169D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 203308F71A8F90FB006A169D /* main.m */; };
 		203308FB1A8F90FB006A169D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 203308FA1A8F90FB006A169D /* AppDelegate.m */; };
-		203308FE1A8F90FB006A169D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203308FD1A8F90FB006A169D /* ViewController.m */; };
 		203309011A8F90FB006A169D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 203308FF1A8F90FB006A169D /* Main.storyboard */; };
 		203309031A8F90FB006A169D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 203309021A8F90FB006A169D /* Images.xcassets */; };
 		203309061A8F90FB006A169D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 203309041A8F90FB006A169D /* LaunchScreen.xib */; };
 		203309121A8F90FB006A169D /* BloggTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 203309111A8F90FB006A169D /* BloggTests.m */; };
+		2033091D1A8F92A2006A169D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2033091C1A8F92A2006A169D /* TableViewController.m */; };
+		203309201A8F9D13006A169D /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2033091F1A8F9D13006A169D /* BlogPost.m */; };
+		203309221A8FA649006A169D /* photo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 203309211A8FA649006A169D /* photo.JPG */; };
+		203309251A8FB18A006A169D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203309241A8FB18A006A169D /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,19 @@
 		203308F71A8F90FB006A169D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		203308F91A8F90FB006A169D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		203308FA1A8F90FB006A169D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		203308FC1A8F90FB006A169D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		203308FD1A8F90FB006A169D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		203309001A8F90FB006A169D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		203309021A8F90FB006A169D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		203309051A8F90FB006A169D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2033090B1A8F90FB006A169D /* BloggTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloggTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		203309101A8F90FB006A169D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		203309111A8F90FB006A169D /* BloggTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloggTests.m; sourceTree = "<group>"; };
+		2033091B1A8F92A2006A169D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2033091C1A8F92A2006A169D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		2033091E1A8F9D13006A169D /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		2033091F1A8F9D13006A169D /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		203309211A8FA649006A169D /* photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.JPG; sourceTree = "<group>"; };
+		203309231A8FB18A006A169D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		203309241A8FB18A006A169D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +91,13 @@
 			children = (
 				203308F91A8F90FB006A169D /* AppDelegate.h */,
 				203308FA1A8F90FB006A169D /* AppDelegate.m */,
-				203308FC1A8F90FB006A169D /* ViewController.h */,
-				203308FD1A8F90FB006A169D /* ViewController.m */,
 				203308FF1A8F90FB006A169D /* Main.storyboard */,
+				2033091E1A8F9D13006A169D /* BlogPost.h */,
+				2033091F1A8F9D13006A169D /* BlogPost.m */,
+				2033091B1A8F92A2006A169D /* TableViewController.h */,
+				2033091C1A8F92A2006A169D /* TableViewController.m */,
+				203309231A8FB18A006A169D /* DetailViewController.h */,
+				203309241A8FB18A006A169D /* DetailViewController.m */,
 				203309021A8F90FB006A169D /* Images.xcassets */,
 				203309041A8F90FB006A169D /* LaunchScreen.xib */,
 				203308F51A8F90FB006A169D /* Supporting Files */,
@@ -96,6 +108,7 @@
 		203308F51A8F90FB006A169D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				203309211A8FA649006A169D /* photo.JPG */,
 				203308F61A8F90FB006A169D /* Info.plist */,
 				203308F71A8F90FB006A169D /* main.m */,
 			);
@@ -201,6 +214,7 @@
 			files = (
 				203309011A8F90FB006A169D /* Main.storyboard in Resources */,
 				203309061A8F90FB006A169D /* LaunchScreen.xib in Resources */,
+				203309221A8FA649006A169D /* photo.JPG in Resources */,
 				203309031A8F90FB006A169D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203308FE1A8F90FB006A169D /* ViewController.m in Sources */,
+				203309251A8FB18A006A169D /* DetailViewController.m in Sources */,
 				203308FB1A8F90FB006A169D /* AppDelegate.m in Sources */,
+				2033091D1A8F92A2006A169D /* TableViewController.m in Sources */,
 				203308F81A8F90FB006A169D /* main.m in Sources */,
+				203309201A8F9D13006A169D /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,9 @@
 
 @interface DetailViewController : UIViewController
 
+
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) NSURL *blogPostUrl;
+
+
 @end
